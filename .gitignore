@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+WWSeleniumBase.Framework/.vs
+WWSeleniumBase.Framework/bin
+WWSeleniumBase.Framework/obj
