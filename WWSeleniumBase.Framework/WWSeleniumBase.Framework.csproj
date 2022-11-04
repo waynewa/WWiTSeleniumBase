@@ -20,13 +20,13 @@
 
 		<NeutralLanguage>en</NeutralLanguage>
 
-		<AssemblyVersion>1.0.0.4</AssemblyVersion>
+		<AssemblyVersion>1.0.0.6</AssemblyVersion>
 
-		<FileVersion>1.0.0.4</FileVersion>
+		<FileVersion>1.0.0.6</FileVersion>
 
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 
-		<Version>1.0.0.4</Version>
+		<Version>1.0.0.6</Version>
 
 		<ApplicationIcon>WWiTLogoWhite.ico</ApplicationIcon>
 
@@ -64,10 +64,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="..\..\Documents\Wayne Personal\Pictures\WWiTLogo-512.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
 	  <None Include="..\LICENSE">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
@@ -76,15 +72,18 @@
 
 	<ItemGroup>
 		<PackageReference Include="ExtentReports.Core" Version="1.0.3" />
-		<PackageReference Include="Microsoft.Identity.Client" Version="4.46.2" />
-		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.1" />
-		<PackageReference Include="coverlet.collector" Version="3.1.2" />
+		<PackageReference Include="Microsoft.Identity.Client" Version="4.48.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+		<PackageReference Include="coverlet.collector" Version="3.2.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
 		<PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-		<PackageReference Include="RestSharp" Version="108.0.1" />
-		<PackageReference Include="Selenium.WebDriver" Version="4.4.0" />
-		<PackageReference Include="WebDriverManager" Version="2.15.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta2" />
+		<PackageReference Include="RestSharp" Version="108.0.3-alpha.0.5" />
+		<PackageReference Include="Selenium.WebDriver" Version="4.5.1" />
+		<PackageReference Include="WebDriverManager" Version="2.16.0" />
 		<PackageReference Include="xunit" Version="2.4.2" />
 		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
 			<PrivateAssets>all</PrivateAssets>
@@ -94,6 +93,14 @@
 
 	<ItemGroup>
 	  <None Update="ReadMe.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Update="WWiTLogo-512.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Update="WWiTLogoWhite.ico">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>

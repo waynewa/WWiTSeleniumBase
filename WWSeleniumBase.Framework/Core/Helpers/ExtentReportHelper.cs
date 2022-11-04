@@ -73,6 +73,7 @@ namespace SeleniumBase.Framework.Core.Helpers
         /// <param name="message">string message to be written in report</param>
         public void Error(string message)
         {
+            AddScreenShots();
             extentTest.Error(message);
         }
 

@@ -21,7 +21,7 @@ namespace SeleniumBase.Framework.Core.Selenium
             //chromeOption.AddArguments("incognito");
             chromeOption.AddArguments("test-type");
             chromeOption.AddArgument("no-sandbox");
-            chromeOption.AddArgument("headless");
+            //chromeOption.AddArgument("headless");
             return chromeOption;
         }
 
