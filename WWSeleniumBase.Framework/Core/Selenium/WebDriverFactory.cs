@@ -22,7 +22,7 @@ namespace SeleniumBase.Framework.Core.Selenium
         /// </summary>
         /// <param name="name">Browser name i.e.: Chrome</param>
         /// <returns></returns>
-        public IWebDriver CreateWebDriver(string name, string remoteURL = "")
+        public IWebDriver CreateWebDriver(string name,bool isHeadless, string remoteURL = "")
         {
             WebRequest.DefaultWebProxy.Credentials = CredentialCache.DefaultNetworkCredentials;
             try
@@ -51,7 +51,7 @@ namespace SeleniumBase.Framework.Core.Selenium
                         return Driver;
                     case "Chrome":
                         new DriverManager().SetUpDriver(new ChromeConfig());
-                        ChromeOptions options = new WebDriverOptions().GetChromeOptions();
+                        ChromeOptions options = new WebDriverOptions().GetChromeOptions(isHeadless);
                         Driver = new ChromeDriver(options);
                         Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
                         return Driver;

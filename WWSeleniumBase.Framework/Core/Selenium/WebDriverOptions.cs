@@ -13,7 +13,7 @@ namespace SeleniumBase.Framework.Core.Selenium
         /// Method returns the Chrome browser options to be utilised when loading the chrome driver
         /// </summary>
         /// <returns>ChromeOptions</returns>
-        public ChromeOptions GetChromeOptions()
+        public ChromeOptions GetChromeOptions(bool isHeadless)
         {
             ChromeOptions chromeOption = new ChromeOptions();
             chromeOption.AddArguments("disable-extensions");
@@ -21,7 +21,11 @@ namespace SeleniumBase.Framework.Core.Selenium
             //chromeOption.AddArguments("incognito");
             chromeOption.AddArguments("test-type");
             chromeOption.AddArgument("no-sandbox");
-            //chromeOption.AddArgument("headless");
+            if (isHeadless)
+            {
+                chromeOption.AddArgument("headless");
+            }
+
             return chromeOption;
         }
 

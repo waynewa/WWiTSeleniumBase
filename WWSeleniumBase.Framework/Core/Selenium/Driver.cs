@@ -28,15 +28,15 @@ namespace SeleniumBase.Framework.Core.Selenium
         /// Initializing the Webdriver with parameter 'webBrowser', this sets the browser type i.e.: Chorme
         /// </summary>
         /// <param name="webBrowser">Browser Type i.e.: Chrome,Edge</param>
-        public static void Init(string webBrowser, string remoteUrl = DefaultGridUrl)
+        public static void Init(string webBrowser, bool isHeadless, string remoteUrl = DefaultGridUrl)
         {
             if (remoteUrl == "")
             {
-                _driver = new WebDriverFactory().CreateWebDriver(webBrowser);
+                _driver = new WebDriverFactory().CreateWebDriver(webBrowser,isHeadless);
             }
             else
             {
-                _driver = new WebDriverFactory().CreateWebDriver(webBrowser, remoteUrl);
+                _driver = new WebDriverFactory().CreateWebDriver(webBrowser, isHeadless, remoteUrl);
             }
             Wait = new Wait(30);
             //Log.Info("Driver Initialization Complete");

@@ -96,7 +96,7 @@ namespace SeleniumBase.Framework.Core.Helpers
 
             var BaseURL = MSUrl + TenantId + AuthEndPoint + endPointRequest;
 
-            Driver.Init("Chrome");
+            Driver.Init("Chrome",true);
             Thread.Sleep(3000);
             Driver.Goto(BaseURL);
             Driver.WaitForPageLoad(30);

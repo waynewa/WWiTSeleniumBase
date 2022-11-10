@@ -27,3 +27,27 @@ Core Modules
 
 #Additional updates to be added
 - Framework Usage 
+ * Create new project, add the WWitSeleniumFramework nuget package 
+ * Setup runsettings file 
+ ***************Example*******************
+ <?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+  <!-- Parameters used by tests at runtime on the New Environment -->
+  <TestRunParameters>
+    <Parameter name="TestUrl" value="https://wwit.netlify.app" />
+
+    <!--Browser Type has a Selection of 
+    - Firefox
+    - InternetExplorer
+    - Edge
+    - Chrome
+    -->
+
+    <Parameter name="BrowserType" value="Chrome" />
+	<Parameter nmae="IsHeadless" value="false" />
+
+  </TestRunParameters>
+</RunSettings>
+
+*******************************************
+ 
