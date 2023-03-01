@@ -8,7 +8,7 @@ namespace SeleniumBase.Framework.Core.Selenium
 {
     public class Wait
     {
-        //Initial instatiation of the WebDriverWait Function
+        //Initial instantiation of the WebDriverWait Function
         private readonly WebDriverWait _wait;
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace SeleniumBase.Framework.Core.Selenium
         }
 
         /// <summary>
-        /// This methond waits for a element to be displayed , and has additional description attribute
+        /// This method waits for a element to be displayed , and has additional description attribute
         /// </summary>
         /// <param name="webElement">Element to be displayed</param>
         /// <param name="elementDescription">Description of the element </param>
