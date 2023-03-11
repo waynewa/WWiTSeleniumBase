@@ -56,3 +56,5 @@ WWSeleniumBase.Framework/obj
 /.vs
 /bin
 /obj
+.vscode/launch.json
+.vscode/tasks.json
