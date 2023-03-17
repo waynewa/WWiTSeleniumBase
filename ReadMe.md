@@ -50,4 +50,8 @@ Core Modules
 </RunSettings>
 
 *******************************************
- 
+ ## SampleProjects 
+  
+  The link below has some of the sample projects that ustilizes the framework
+
+ https://github.com/waynewa/SampleProjects
