@@ -11,22 +11,26 @@
 
 		<Company>WWiT</Company>
 
-		<Description>WWiT Selenium Based Framework , This frame work exteneds multiple areas in the selenium class files and will house the base framework,
- that can be used in some of the Seleminum Automation Projects . Projects frameworks include UI,API and Mobile </Description>
+		<Description>
+			WWiT Selenium Based Framework , This frame work exteneds multiple areas in the selenium class files and will house the base framework,
+			that can be used in some of the Seleminum Automation Projects . Projects frameworks include UI,API and Mobile
+		</Description>
 
 		<PackageTags>WWiTSeleniumBase Framework</PackageTags>
 
-		<PackageReleaseNotes>Updated release content in order to resolve config requirements for NuGet.org </PackageReleaseNotes>
+		<PackageReleaseNotes>
+			Updated release content in order to resolve dependacies and updated API services Calls
+		</PackageReleaseNotes>
 
 		<NeutralLanguage>en</NeutralLanguage>
 
-		<AssemblyVersion>1.0.0.9</AssemblyVersion>
+		<AssemblyVersion>1.0.3</AssemblyVersion>
 
-		<FileVersion>1.0.0.9</FileVersion>
+		<FileVersion>1.0.3</FileVersion>
 
-		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 
-		<Version>1.0.0.9</Version>
+		<Version>1.0.3</Version>
 
 		<ApplicationIcon>WWiTLogo.ico</ApplicationIcon>
 
@@ -60,14 +64,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="WWiTLogo.ico" />
+		<Content Include="WWiTLogo.ico" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="LICENSE">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Include="LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -75,8 +79,8 @@
 		<PackageReference Include="Microsoft.Identity.Client" Version="4.60.3" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
 		<PackageReference Include="coverlet.collector" Version="6.0.2">
-		  <PrivateAssets>all</PrivateAssets>
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 		<PackageReference Include="MSTest.TestAdapter" Version="3.3.1" />
 		<PackageReference Include="MSTest.TestFramework" Version="3.3.1" />
@@ -92,18 +96,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="ReadMe.md">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
-	  <None Update="WWiTLogo-512.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
-	  <None Update="WWiTLogo.ico">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Update="ReadMe.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="WWiTLogo-512.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="WWiTLogo.ico">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 </Project>
