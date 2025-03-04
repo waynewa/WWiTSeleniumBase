@@ -27,8 +27,8 @@ Core Modules
 
 # Additional updates to be added
 - Framework Usage 
- * Create new project, add the WWitSeleniumFramework nuget package 
- * Setup runsettings file 
+ * Create new project, add the WWitSeleniumFramework nuget package - (Lastest version can be found here: https://www.nuget.org/packages/WWSeleniumBase.Framework/1.0.5)
+ * Setup runsettings file used in both API and GUI Tests
  ***************Example*******************
  <?xml version="1.0" encoding="utf-8" ?>
 <RunSettings>
@@ -50,6 +50,13 @@ Core Modules
 </RunSettings>
 
 *******************************************
+
+* Additional support added for the Specflo tests and can be configured via "Settings.json file"*
+*  ***************Example*******************
+* {
+* "TestUrl": "https://wwit.netlify.app"
+* }
+* 
  ## SampleProjects 
   
   The link below has some of the sample projects that ustilizes the framework
